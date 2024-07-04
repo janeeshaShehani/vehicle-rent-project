@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position:sticky;
+    top: 0%;
+    z-index: 100;
+    width: 100%;
+
+}
+
+.head1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+.head2 {
+    margin: 0;
+    padding-top: 5px;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.head2 img {
+    width: 160px;
+    height: auto;
+
+}
+.dropdown-menu a{
+    transition-delay: 20ms;
+}
+.dropdown-menu a:hover{
+    background-color: rgb(239, 60, 60);
+    
+}
+
+
+.main-container {
+    background-color: #ffffff;
+    margin: 5% auto;
+    height: auto;
+    padding: 3%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    width: 45%;
+}
+
+.description h1 {
+    font-size: 2em;
+}
+
+.supplier-name {
+    background-color: rgb(161, 11, 11);
+    padding: 3%;
+    color: #ffffff;
+    width: 70%;
+    border-radius: 4%;
+    margin: 5%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.description p {
+    margin: 2%;
+    width: fit-content;
+}
+
+.red-sentence {
+    color: red;
+    margin: 3%;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1%;
+}
+
+.container form {
+    width: 90%;
+    max-width: auto;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form h2{
+    color: #9115b7;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-group label {
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    background: transparent;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 2%;
+    color: #333;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #7d7979;
+}
+
+form button {
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color: rgba(220, 175, 175, 0.985);
+    color: rgb(20, 17, 19);
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.link-danger{
+    color: white;
+    border-right: 1px solid;
+    padding-right: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.footer .row {
+    border-top: 1px solid #605c5c;
+    width: 100%;
+    padding: 10px 10%;
+    
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer p{
+    
+    border-right: 1px solid;
+    padding-right: 10%;
+    font-size: medium;
+    padding: 0 30px;
+}
+
+
+/*-------------------------style for errors------------------------------*/
+
+.input-group span{
+    position: relative;
+    font-size: 14px;
+    margin-left: 2%;
+    color: red;
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+#submit-error{
+    color: red;
+    font-size: 14px;
+}
+
+/*-----------------------Responsive----------------------------*/
+
+@media screen and (max-width: 800px){
+    
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    form{
+        margin-top: 5%;
+    }
+
+    .supplier-name{
+        padding: auto;
+        font-size: 15px;
+    }
+
+    .footer{
+        height: auto;
+    }
+}

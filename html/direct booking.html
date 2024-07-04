@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/direct booking.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Direct Booking</title>
+    
+</head>
+<body>
+
+    <!--------------------------nav bar-------------------------------------------------->
+
+    <section class="header">
+        <div class="head1"></div>
+        <div class="head2">
+            <img src="../images/directbookingimage/logo.png">
+    
+    
+    <!-- --navbar -->      <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(215, 215, 215); padding: 2px;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../html/index.html" target="_blank">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            VEHICLE & RATES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../vehicles categary/all.html">ALL VEHICLES</a>
+                                <a class="dropdown-item" href="../vehicles categary/vip.html">VVIP/VIP</a>
+                                <a class="dropdown-item" href="../vehicles categary/standerd.html">STANDERD</a>
+                                <a class="dropdown-item" href="../vehicles categary/standerd.html">LUXURY</a>
+                                <a class="dropdown-item" href="../vehicles categary/wedding.html">WEDDING & EVENTS</a>
+                                <a class="dropdown-item" href="../vehicles categary/van.html">VAN & BUSES</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            RENT YOUR VEHICLE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="newregistration.html" target="_blank">NEW REGISTRATIONS</a>
+                            <a class="dropdown-item" href="suppliercomments.html" target="_blank">SUPPLIER COMMENTS</a>
+                          </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        USEFUL POINTS
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="services.html" target="_blank">SERVICES</a>
+                        <a class="dropdown-item" href="contact.html" target="_blank">CONTACT</a>
+                        <a class="dropdown-item" href="../html/direct booking.html">DIRECT BOOLING</a>
+                        <a class="dropdown-item" href="about us.html" target="_blank">ABOUT US</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    
+    <!-- /nav bar -->
+    
+        </div>
+    </section>
+
+    <!----------------------------------end nav bar------------------------------------->
+   
+
+    <div class="booking">
+        <div class="booking-content"> <form onsubmit="return validateForm()">
+            
+            <div class="booking-title-1">D
+                <div class="booking-title-2">IRECT</div>
+                                    B 
+                <div class="booking-title-2">OOKING</div>
+                
+            </div>
+            <div class="hr">&nbsp</div>
+            <br>
+<!----------------------------------------------------------------------------------------------------------------->
+            <div class="booking-form">  
+                <div class="booking-f1">
+                    Title<br>
+                    <form onsubmit="return validateForm()">
+                    <select name="title" id="title" name="title" value="title">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                    </form>
+                </div>
+                <div class="booking-f2">
+                    First name<i style="color: red;">*</i><br>
+                    <form onsubmit="return validateForm()">
+                        <div class="input-control">
+                            <input type="text" id="firstname" name="firstname" placeholder="First name" size="40" required>
+                            <div class="error"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Last name<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" id="last name" name="last name" placeholder="Last name">
+                    </form>
+                </div>
+            </div> 
+<!---------------------------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f1">
+                    <br>
+                    <form onsubmit="return validateForm()">
+                        <select name="code" value="code">
+                            <option>SL: +94 </option>
+                            <option>AE: +971</option>
+                            <option>AF: +93</option>
+                            <option>AG: +1</option>
+                            <option>AL: +355</option>
+                            <option>AM: +374</option>
+                            <option>AW: +297</option>
+                            <option>AG: +672</option>
+                            <option>BD: +880</option>                                           
+                        </select>
+                    </form>
+                </div>
+                <div class="booking-f2">
+                    Contact number<i style="color: red;">*</i><br>
+                    <form onsubmit="return validateForm()">
+                        <div class="input-control">
+                            <input type="tel" id="contactnumber" name="cantactnumber" placeholder="Mobile" required>
+                            <div class="error"></div>
+                         </div>
+                    </form>
+                </div>
+                <div class="booking-f1">
+                    <br>
+                    <form onsubmit="return validateForm()">
+                        <select name="code" value="code">
+                            <option>SL: +94 </option>
+                            <option>AE: +971</option>
+                            <option>AF: +93</option>
+                            <option>AG: +1</option>
+                            <option>AL: +355</option>
+                            <option>AM: +374</option>
+                            <option>AW: +297</option>
+                            <option>AG: +672</option>
+                            <option>BD: +880</option>                                           
+                        </select>
+                    </form>
+                </div>
+                <div class="booking-f2">
+                    Contact of close Relation<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="tel" id="Contact of close Relation" name="Contact of close Relation" placeholder="Contact of close Relation">
+                    </form>
+                </div>
+            </div>
+<!------------------------email and contact agent----------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    
+                    Email<i style="color: red;">*</i><br>
+                    <form onsubmit="return validateForm()">
+                        <div class="input-control">
+                            <input type="text" id="email" name="email" placeholder="Your Email" required>
+                            <div class="error"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Contact Agent (optional)<br>
+                    <form onsubmit="return validateForm()">
+                        <select name="agent">
+                            <option>Tharindu</option>
+                            <option>Supun</option>
+                            <option>yasiru</option>
+                            <option>thimalka</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+<!----------------------pickup,return date and time-------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Pickup Date & Time<i style="color: red;">*</i><br>
+                    <form onsubmit="return validateForm()">
+                        <input type="datetime-local" id=" PickupTime" name=" PickupTime"value="DD.MM.YYYY" required>
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Return Date & Time<i style="color: red;">*</i><br>
+                    <form onsubmit="return validateForm()">
+                        <input type="datetime-local" id="ReturnTime" name=ReturnTime" value="DD.MM.YYYY" required>
+                    </form>
+                </div>
+            </div>
+<!-------------------vehicle type, model---------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Vehicle Type<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" id="vehicle type" name="vehicle type" placeholder="Type">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Vehicle Model<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" id="vehicle model" name="vehicle model" placeholder="Model">
+                    </form>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Rent Amount (Period * Per Day OR Month rent)<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" name="Rent Amount" id="Rent Amount" placeholder="Rs.">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Deposit Amount<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" id="Deposit Amount" name="Deposit Amount" placeholder="Rs.">
+                    </form>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Period<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" name=" Period" id=" Period" placeholder="EX: 10 Days">
+                    </form>
+                </div>
+                <div class="booking-f4">
+                    Per Day Rent<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" name="Per Day Rent" id="Per Day Rent" placeholder="EX: Rs.1500">
+                    </form>
+                </div>
+                <div class="booking-f4">
+                    Per Month Rent<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" name="Per Month Rent" id="Per Month Rent" placeholder="EX: Rs.1500">
+                    </form>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Rent Amount (Period * Per Day OR Month rent)<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" name="Rent Amount" id="Rent Amount" placeholder="Rs.">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Deposit Amount<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" id="Deposit Amount" name="Deposit Amount" placeholder="Rs.">
+                    </form>
+                </div>
+            </div>
+<!---------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Pickup Location<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Location">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Delivery Fee<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Rs.">
+                    </form>
+                </div>
+            </div>
+<!---------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Return Location<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Location">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Pickup Fee<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Rs.">
+                    </form>
+                </div>
+            </div>
+<!------------------------------------------------------------------------------------>
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Other Services<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Services">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Advance<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Rs.">
+                    </form>
+                </div>
+            </div>
+<!--------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Paid Date<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Ex:dd/mm/yyyy">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Payment slip (.jpg or .png)<i style="color: red;">*</i><br>
+                    <form action="/action_page.php">
+                            <input type="file" name="Payment slip" id="Payment slip" required>
+                    </form>
+                </div>
+            </div>
+<!-------------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Total Amount of delivery<br>
+                    <form onsubmit="return validateForm()">
+                        <div class="input-control">
+                            <input type="text" placeholder="Rs.">
+                            <div class="error"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    Mileage Limit (Km)<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="50km">
+                    </form>
+                </div>
+            </div>
+<!--------------------------------------------------------------------------------------------->
+            <div class="booking-form">
+                <div class="booking-f3">
+                    Extra Kms (Rs)<br>
+                    <form onsubmit="return validateForm()">
+                        <input type="text" placeholder="Rs.">
+                    </form>
+                </div>
+                <div class="booking-f3">
+                    <br>
+                    <form onsubmit="return validateForm()">
+                        <input type="submit" id="submit" name="submit" value="BOOK NOW" >
+                    </form>
+                </div>
+            </div>
+        </form>
+        </div></div>
+
+
+
+ 
+
+<!-----------------------------footer----------------------------------->
+
+<section class="footer">
+    <div class="text"><h1>SLCAR</h1></div>
+    <div class="row">
+      <a href="about us.html" target="_blank" class="link-danger col-12 col-sm-4 col-md-2 ">ABOUT US</a>
+      <a href="user guide.html" target="_blank" class="link-danger col-12 col-sm-4 col-md-2">USER GUIDE</a>
+      <a href="services.html" target="_blank" class="link-danger col-12 col-sm-4 col-md-2">SERVICES</a>
+      <a href="direct booking.html" class="link-danger col-12 col-sm-4 col-md-2">DIRECT BOOKINGS</a>
+      <a href="..//vehicles categary/all.html" class="link-danger col-12 col-sm-4 col-md-2">VEHICLE & RATES</a>
+      <a href="contact.html" target="_blank" class="link-danger col-12 col-sm-4 col-md-2">CONTACT</a>
+    </div>
+    <div class="row">
+        <p class="col-12 col-md-4">No 82/A,Meewanapalana,Horana, Sri Lanka.</p>
+        <p class="col-12 col-md-4">HOTLINE: +94 767879313</p>
+        <p class="col-12 col-md-4">EMAIL: corporate.sales@slcar.lk</p>
+    </div>
+
+    
+
+
+</section>
+
+
+
+
+
+<!--------------------------end footer-------------------------->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <script src="../javascript/direct booking.js"></script>
+
+</body>         
+</html>

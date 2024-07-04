@@ -1,0 +1,262 @@
+/*----------------nav bar--------------------------------*/
+
+/* nav bar section */
+.header {
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        z-index: 100;
+        width: 100%;
+    
+    }
+    
+    
+    .head1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 40px;
+        background-color: black;
+    }
+    
+    .head2 {
+        margin: 0;
+        padding-top: 5px;
+        width: 100%;
+        height: 55px;
+        background-color: rgb(215, 215, 215);
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    
+    .head2 img {
+        width: 160px;
+        height: auto;
+    
+    }
+    .dropdown-menu a{
+        transition-delay: 20ms;
+    }
+    .dropdown-menu a:hover{
+        background-color: rgb(239, 60, 60);
+        
+    }
+    
+    /* /navbar section end */
+
+/*--------------------end nav bar-------------------------*/
+
+
+
+
+
+
+.booking{background-color: rgb(255, 255, 255);
+        padding:80px 15% 0px 15%;
+        color: rgb(12, 10, 10);}
+
+.booking-content{background-color: rgba(151, 167, 173, 0.195);
+                font-size: 18px;
+                padding: 10px 7% 50px 7%;
+                font-family:arial;}
+
+.booking-title-2{font-size: 40px;
+                font-family:calibri light;
+                color: black;
+                margin-top:10px;
+                margin-right: 15px;
+                font-weight: bold;}
+
+.booking-title-1{font-size: 50px;
+                font-family:Calibri Light;
+                color: rgb(156, 1, 1);
+                display: flex;
+                flex-direction: row;
+                font-weight: bold;}
+
+.hr{position: relative;
+        width:100%;
+        height:7px;
+              }
+
+.hr::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #7f0336;
+        transform-origin: left;
+        animation: expand 2s ease-in-out-forwards;
+}
+
+@keyframes expand{
+        from{width:0}
+        to{width:100%}
+}
+
+
+.booking-form{display: flex;
+            flex-direction: row;}
+
+
+
+.booking-f1{width: 10%; padding: 10px;}
+.booking-f2{width: 40%; padding: 10px;}
+.booking-f3{width: 50%; padding: 10px;}
+.booking-f4{width: 25%; padding: 10px;}
+        
+.booking-form input{width:100%;
+                    height: 40px;
+                    font-size: 17px;
+                    color: rgba(0, 0, 0, 0.523);
+                    }
+
+.booking-form select{width:100%;
+                    height:45px;
+                    font-size: 17px;
+                    color: rgba(0, 0, 0, 0.523);
+                    }
+
+.booking-form option{margin-top: 5px;
+                        color: black;
+                        width:100%;
+                        }
+input[type="submit"]{cursor: pointer;
+        background-color: #7f0336;
+                color: antiquewhite;
+                padding: 5px 15px;
+                width:50%;}
+
+input[type="submit"]:hover{background-color: beige;
+                                color:black;
+                                border-color: #7f0336;}
+
+
+
+.input-control input:focus{outline: 0;}
+
+.input-control.success input{
+        border-color: #3b9819;
+}
+
+.input-control.error input{
+        border-color: #9c0202;
+}
+
+.input-control.error {
+        border-color: #9c0202;
+        font-size: 9px;
+        height: 13px;
+}
+/*--------------------------------fooret-------------------------------------------*/
+
+
+.footer{
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .link-danger{
+        color: white;
+        border-right: 1px solid;
+        padding-right: 10px;
+        padding: 5px;
+        margin-bottom: 15px;
+        padding-left: 30px;
+    }
+    
+    .footer .row {
+        border-top: 1px solid #605c5c;
+        width: 100%;
+        padding: 10px 10%;
+        
+    }
+    
+    .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .footer p{
+        
+        border-right: 1px solid;
+        padding-right: 10%;
+        font-size: medium;
+        padding: 0 30px;
+    }
+/*----------end footer-----------------------------------*/
+
+
+
+
+/*----------------------------------------------------------
+---------------------------booking responsive----------------------------
+-------------------------------------------------------------------*/
+@media only screen and (max-width: 1154px){
+   
+        .booking-content{font-size: 18px;
+}
+    
+
+    .booking{padding:80px 10% 0px 10%;
+            text-align: left;}
+
+    .booking-title-2{font-size: 30px;  margin-right: 10px;}
+    .booking-title-1{font-size: 40px;}
+
+}
+@media only screen and (max-width: 890px){
+        .booking-content{font-size: 17px;
+                        padding: 20px 5%;}
+
+        .booking{padding:80px 5%;
+                text-align: left;}
+
+@media only screen and (max-width: 767px){
+        .booking-content{font-size: 17px;
+                padding: 20px 5%;}
+
+        .booking{padding:80px 5% 0px 5% ;
+                text-align: left;}
+}
+
+
+
+        .booking-form{display: flex;
+                flex-direction: column;}
+        .booking-f1{width: 90%; margin-right: 10px;}
+        .booking-f2{width: 90%;  margin-right: 10px;}
+        .booking-f3{width: 90%;  margin-right: 10px;}
+        .booking-f4{width: 90%;  margin-right: 10px;}
+    
+        input[type="submit"]{width:60%}
+}
+
+@media only screen and (max-width: 350px){
+   
+        .booking{padding:80px 0px 0px 0px;
+                text-align: left;}
+    .booking-title-2{font-size: 15px; margin-right: 5px;}
+    .booking-title-1{font-size: 25px;}
+
+   .booking-content{margin:0px; font-size: 15px;
+                        margin-left: 10px; padding-left: 10px;} 
+
+        .booking-form input {font-size: 14px;}
+        .booking-form select {font-size: 14px;}
+
+        input[type="submit"]{width:100%
+        }
+
+    
+}
+
+   

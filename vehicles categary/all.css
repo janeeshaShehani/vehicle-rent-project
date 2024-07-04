@@ -1,0 +1,432 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* nav bar section */
+.header {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+
+.head1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+.head2 {
+    margin: 0;
+    padding-top: 5px;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.head2 img {
+    width: 160px;
+    height: auto;
+
+}
+.dropdown-menu a{
+    transition-delay: 20ms;
+}
+.dropdown-menu a:hover{
+    background-color: rgb(239, 60, 60);
+    
+}
+
+/* /navbar section end */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-fluid {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    padding: 1% 10% 0% 10%;
+}
+
+.containerx {
+    width: 70%;
+    margin: 0;
+    box-shadow:0 0 15px #b2b4b2bf
+}
+
+.containerx .search {
+    display: flex;
+    position: relative;
+}
+.containerx .search input {
+    width: 100%;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #c5bebe;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.containerx .search input::placeholder {
+    color: black;
+    font-weight: 100;
+}
+
+.suggestions {
+    position: absolute;
+    max-height: 250px;
+    overflow-y: scroll;
+    top: 100%;
+    left: 0;
+    width: 70%;
+    background: rgb(171, 171, 177);
+    z-index: 1;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: #f0f0f0;
+}
+
+/*------------------------------------ VEHICLS-------------------------------------------- */
+.col1{
+    background-color: rgb(243, 241, 237);
+    width: 80%;
+    margin: 30px;
+    box-shadow: 0px 10px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+    border-radius: 10px;
+    padding-left:0px;
+    padding: 2%;
+    
+    
+    }
+.col1:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+.col1_img img{
+   width: 32%;
+   height: auto;
+    float: left;
+}
+.col1_1{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col1brand{
+    margin-top: 20px;
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col1-feachers{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+.gear{
+    padding: 20px 50px;
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    
+}
+.gear img{
+    padding: 15px;
+
+}
+.Sheets{
+    padding: 35px 50px;
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    
+}
+.sheets img{
+    padding: 15px;
+}
+
+
+.fuel{
+    padding: 20px 50px;
+    border-top-style: hidden;
+    border-right-style: solid;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    
+}
+.fuel img{
+    padding: 15px;
+}
+/* ==========================footer========================= */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.link-danger{
+    color: white;
+    border-right: 1px solid;
+    padding-right: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.footer .row {
+    border-top: 1px solid #605c5c;
+    width: 100%;
+    padding: 10px 10%;
+    
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer p{
+    
+    border-right: 1px solid;
+    padding-right: 10%;
+    font-size: medium;
+    padding: 0 30px;
+}
+
+
+
+/* -----------------------Responsive---------------------------------- */
+    
+
+@media only screen and (max-width: 1020px){
+    .col1{
+        padding: 2%;
+        margin: 15px 130px;
+        width: 80%;
+        margin-bottom: 40px;
+           
+    }
+    .col1_img{
+        width: 25%;
+        height: auto;
+
+    }
+    .col1_img img{
+        width: 170%;
+        height: auto;
+    }
+    .col1brand{
+        font-size: 1.1rem;
+        margin: 0%
+    }
+    .col1-feachers{
+        padding: 0%;
+        padding-bottom: 5px;
+        margin: 0%;
+    }
+    .gear{
+        border-right: solid;
+        margin: 0%;
+        padding-left: 10px;
+        justify-content: center;
+    }
+    .gear img{
+        padding: 15px;
+    
+    }
+    .Sheets{
+        border-right: solid;
+        margin: 0%;
+        padding: 20px;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .Sheets img{
+        padding-bottom: 15px;
+    }
+    .fuel{
+        border-right: solid;
+        margin: 0%;
+        padding: 15px;
+        justify-content: center;
+    }
+    .fuel img{
+        margin: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 775px){
+    .col1{
+        padding: 2%;
+        margin: 15px 0px;
+        width: 90%;
+        margin-bottom: 40px;
+           
+    }
+    .col1_img{
+        width: 20%;
+        height: auto;
+
+    }
+    .col1_img img{
+        width: 185%;
+        height: auto;
+    }
+    .col1brand{
+        padding-bottom: 15px;
+        font-size: 0.8rem;
+        margin: 0%
+    }
+    .col1-feachers{
+        padding: 0%;
+        padding-bottom: 5px;
+        margin: 0%;
+    }
+    .gear{
+        font-size: 0.6rem;
+        padding: 5px;
+        border-right: solid;
+        justify-content: center;
+    }
+    .gear img{
+        padding: 20px;
+    
+    }
+    .Sheets{
+        font-size: 0.6rem;
+        border-right: solid;
+        padding: 5px;
+        padding: 20px;
+        justify-content: center;
+    }
+    .Sheets img{
+        padding-bottom: 15px;
+    }
+    .fuel{
+        font-size: 0.6rem;
+        border-right: solid;
+        padding: 12px;
+        justify-content: center;
+    }
+    .fuel img{
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .container .search input{
+        
+        font-size: 15px;
+    }
+ 
+    .suggestions{
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .containerx .search input{
+        
+        font-size: 12px;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-bottom: 3%;
+    }
+    .suggestions {
+        max-height: 200px;
+        width: 50%;
+        font-size: 13px;
+    }
+.col1{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    margin-bottom: 40px;
+   	
+}
+.col1_img{
+    width: 100%;
+    height: 100%;
+    size: 150px;
+}
+.col1_img img{
+    width: 100%;
+    height: auto;
+}
+.col1brand{
+    font-size: 1.0rem;
+    margin: 0%
+}
+.col1-feachers{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin: 0%;
+}
+.gear{
+    border: hidden;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+}
+.gear img{
+    padding: 15px;
+
+}
+.Sheets{
+    border: hidden;
+    margin: 0%;
+    padding: 15px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.Sheets img{
+    padding-bottom: 15px;
+}
+.fuel{
+    border: hidden;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+}
+.fuel img{
+    margin: 5px;
+}
+}
+
+

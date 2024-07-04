@@ -1,0 +1,208 @@
+/*----------------nav bar--------------------------------*/
+
+/* nav bar section */
+.header {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+
+
+.head1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+.head2 {
+    margin: 0;
+    padding-top: 5px;
+    width: 100%;
+    height: 55px;
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.head2 img {
+    width: 160px;
+    height: auto;
+
+}
+.dropdown-menu a{
+    transition-delay: 20ms;
+}
+.dropdown-menu a:hover{
+    background-color: rgb(239, 60, 60);
+    
+}
+
+/* /navbar section end */
+
+/*--------------------end nav bar-------------------------*/
+
+/*--------------------------------fooret-------------------------------------------*/
+
+
+.footer{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.link-danger{
+    color: white;
+    border-right: 1px solid;
+    padding-right: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.footer .row {
+    border-top: 1px solid #605c5c;
+    width: 100%;
+    padding: 10px 10%;
+    
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer p{
+    
+    border-right: 1px solid;
+    padding-right: 10%;
+    font-size: medium;
+    padding: 0 30px;
+}
+/*----------end footer-----------------------------------*/
+
+.topic{text-align:left;
+        font-size: 50px;
+        font-family: Calibri light;
+        color: aliceblue;
+        background-image:url("../images/userguideimage/images.png") ;
+        background-position: center;
+        width:100%;
+        height:auto;
+        padding: 65px 0px 40px 80px;
+        }
+
+.topic-padding{padding: 100px 17% 20px 17%;
+                background-color: #c1c0c0;}
+
+.content{background-color: rgb(255, 255, 255);
+         font-family: Calibri light;}
+
+.row{display: flex;
+    flex-direction: row;
+    padding: 0px 40px 0px 40px;}
+
+.c1{width:35%;
+    padding: 30px;}
+
+.c2{width:65%;
+    padding: 30px;}
+
+.c1 img{width:100%;
+        height: auto;}
+
+.t1{color: #a11414;
+    font-size: 30px;
+    text-align:center;}
+
+
+.t2{font-size: 22px;
+    text-align:center;}
+
+
+/*------------------responsive---------------------------*/
+@media only screen and (max-width: 1550px){
+    .topic-padding{padding: 100px 10% 20px 10%;
+                    background-color: #c1c0c0;}
+
+     .row{display: flex;
+            flex-direction: row;
+            padding: 0px 20px 0px 20px;}
+
+    .c1{width:40%;
+        padding: 30px;}
+                    
+    .c2{width:60%;
+        padding: 30px;}
+}
+
+@media only screen and (max-width: 1100px){
+
+    .topic-padding{padding: 100px 5% 20px 5%;}
+
+    .c1{width:40%;
+        padding: 10px;}
+                    
+    .c2{width:60%;
+        padding: 10px;}
+
+    .t1{font-size: 25px;}
+
+    .t2{font-size: 20px;}
+
+    .topic{
+        text-align: center;
+        padding: 30px ;}
+}
+
+@media only screen and (max-width: 850px){
+    .row{flex-direction: column;}
+    .c1{width:100%;
+        padding: 0 180px 0 180px;}
+    .c2{width:100%;}
+}
+
+@media only screen and (max-width: 725px){
+    .c1{width:100%;
+        padding: 0 150px 0 150px;}
+
+    .topic{font-size: 30px;
+            text-align: center;
+            padding: 20px ;}
+}
+
+@media only screen and (max-width: 600px){
+    .c1{width:100%;
+        padding: 0 130px 0 130px;}
+
+
+}
+
+@media only screen and (max-width: 534px){
+    .c1{width:100%;
+        padding: 0 110px 0 110px;}
+}
+
+@media only screen and (max-width: 404px){
+    .c1{width:100%;
+        padding: 0 8% 0 8%;}
+
+        .t1{font-size: 22px;}
+
+        .t2{font-size: 18px;}
+
+        .topic{font-size: 25px;
+            text-align: center;
+            padding: 10px ;}
+}
